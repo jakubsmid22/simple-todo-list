@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100svh;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+    background-color: black;
+    padding: 2rem;
+}
+
+h1 {
+    color: white;
+}
+
+main {
+    background-color: white;
+    width: 50%;
+    height: 40rem;
+    border-radius: 4px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.inputs div {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+}
+
+input {
+    font-size: 1rem;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 5px;
+}
+
+input[type="submit"] {
+    padding: .5rem 1rem;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+input[type="submit"]:hover {
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+
+input[type="date"] {
+    width: 30%;
+    text-align: center;
+}
+ 
+.tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    overflow-y: auto;
+}
+
+.task {
+    width: 100%;
+    color: white;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 15px 0;
+    border-radius: 4px;
+}
+
+.task div {
+    text-align: center;
+}
+
+.text {
+    width: 20rem;
+    overflow-wrap: break-word;
+}
+
+.date {
+    width: 20%;
+    white-space: nowrap;
+}
+
+.remove {
+    width: 12%;
+    color: red;
+    cursor: pointer;
+}
+
+@media(max-width: 1200px) {
+    main {
+        width: 100%;
+    }
+}
